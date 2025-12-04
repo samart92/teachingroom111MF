@@ -31,6 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -38,9 +41,6 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(576, 71);
+            this.panel1.Size = new System.Drawing.Size(1247, 71);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -57,7 +57,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 349);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(576, 58);
+            this.panel2.Size = new System.Drawing.Size(1247, 58);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -75,8 +75,34 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 71);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(576, 278);
+            this.panel3.Size = new System.Drawing.Size(1247, 278);
             this.panel3.TabIndex = 2;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(162, 224);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(176, 37);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.Text = "Delete User by ID";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(42, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 29);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "ID";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(47, 214);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 37);
+            this.txtID.TabIndex = 7;
             // 
             // label3
             // 
@@ -142,37 +168,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(47, 214);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 37);
-            this.txtID.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 182);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 29);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "ID";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(162, 224);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(176, 37);
-            this.btnDelete.TabIndex = 9;
-            this.btnDelete.Text = "Delete User by ID";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // frmAddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 407);
+            this.ClientSize = new System.Drawing.Size(1247, 407);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

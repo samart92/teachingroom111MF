@@ -114,6 +114,12 @@
     <Compile Include="allForm\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="allForm\frmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allForm\frmProducts.Designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="allForm\frmUserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allForm\frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmUserLogin.resx">
       <DependentUpon>frmUserLogin.cs</DependentUpon>
