@@ -108,6 +108,12 @@
     <Compile Include="allForm\frmAddUser.Designer.cs">
       <DependentUpon>frmAddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="allForm\frmCatagory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allForm\frmCatagory.Designer.cs">
+      <DependentUpon>frmCatagory.cs</DependentUpon>
+    </Compile>
     <Compile Include="allForm\frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmAddUser.resx">
       <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allForm\frmCatagory.resx">
+      <DependentUpon>frmCatagory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
