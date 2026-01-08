@@ -25,7 +25,7 @@ namespace teachingroom111MF.allForm
         private void btnAdd_Click(object sender, EventArgs e)
         {
             MySqlConnection cnn = new MySqlConnection(Properties.Settings.Default.mysqlConnection);
-            string sql = $"INSERT INTO `tbproduct`( `categoryID`, `sku`, `name`, `price`, `taxRate`, `isActive`, `createAt`) VALUES ('1','{txtSKU.Text}','{txtProductName.Text}','{txtPrice.Text}','{txtTaxRate.Text}','{Convert.ToInt16(chkStatus.Checked)}','{DateTime.Today.ToString("yyyy-MM-dd")}')";
+            string sql = $"INSERT INTO `tbproduct`( `categoryID`, `sku`, `name`, `price`, `taxRate`, `isActive`, `createAt`) VALUES ('{cbbCatagory.SelectedValue}','{txtSKU.Text}','{txtProductName.Text}','{txtPrice.Text}','{txtTaxRate.Text}','{Convert.ToInt16(chkStatus.Checked)}','{DateTime.Today.ToString("yyyy-MM-dd")}')";
             //string sql = $"INSERT INTO `tbproduct`( `name`) VALUES ('{txtProductName.Text}')";
             MySqlCommand cm = new MySqlCommand(sql, cnn);
             cnn.Open();
@@ -90,6 +90,22 @@ namespace teachingroom111MF.allForm
             cnn.Close();
 
             tbnSelect_Click(sender, e);
+        }
+
+        private void frmProducts_Load(object sender, EventArgs e)
+        {
+            MySqlConnection cnn = new MySqlConnection(Properties.Settings.Default.mysqlConnection);
+            string sql = "SELECT * FROM `tbcategories`";
+            MySqlCommand cm = new MySqlCommand(sql, cnn);
+            MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            DataTable dt = new DataTable();
+            cnn.Open();
+            da.Fill(dt);
+            cnn.Close();
+
+            cbbCatagory.DataSource = dt;
+            cbbCatagory.DisplayMember="category";
+            cbbCatagory.ValueMember ="id";
         }
     }
 }

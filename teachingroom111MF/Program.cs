@@ -17,7 +17,7 @@ namespace teachingroom111MF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCatagory());
+            Application.Run(new frmOrder());
         }
     }
 }

@@ -102,6 +102,12 @@
     <Compile Include="allForm\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="allForm\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allForm\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="allForm\frmAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,12 @@
     <Compile Include="allForm\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="allForm\frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allForm\frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="allForm\frmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,8 +146,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userControl\ucCatagory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\ucCatagory.Designer.cs">
+      <DependentUpon>ucCatagory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucCountNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\ucCountNumber.Designer.cs">
+      <DependentUpon>ucCountNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucProductitem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\ucProductitem.Designer.cs">
+      <DependentUpon>ucProductitem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="allForm\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allForm\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmAddUser.resx">
       <DependentUpon>frmAddUser.cs</DependentUpon>
@@ -145,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allForm\frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="allForm\frmProducts.resx">
       <DependentUpon>frmProducts.cs</DependentUpon>
@@ -162,6 +198,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="userControl\ucCatagory.resx">
+      <DependentUpon>ucCatagory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\ucCountNumber.resx">
+      <DependentUpon>ucCountNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\ucProductitem.resx">
+      <DependentUpon>ucProductitem.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

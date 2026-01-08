@@ -30,6 +30,7 @@
         {
             this.txtinput = new System.Windows.Forms.TextBox();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.ucCountNumber1 = new teachingroom111MF.userControl.ucCountNumber();
             this.SuspendLayout();
             // 
             // txtinput
@@ -49,11 +50,25 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // ucCountNumber1
+            // 
+            this.ucCountNumber1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ucCountNumber1.InforText = "Number of User";
+            this.ucCountNumber1.Location = new System.Drawing.Point(122, 219);
+            this.ucCountNumber1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucCountNumber1.Name = "ucCountNumber1";
+           // this.ucCountNumber1.Number = "10";
+            this.ucCountNumber1.Photos = "https://img.freepik.com/premium-vector/image-icon-represents-visual-element-used-" +
+    "symbolize-photos-pictures-graphics_142112-6442.jpg";
+            this.ucCountNumber1.Size = new System.Drawing.Size(264, 114);
+            this.ucCountNumber1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 268);
+            this.ClientSize = new System.Drawing.Size(695, 347);
+            this.Controls.Add(this.ucCountNumber1);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.txtinput);
             this.Font = new System.Drawing.Font("Khmer OS Battambang", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,6 +84,7 @@
 
         private System.Windows.Forms.TextBox txtinput;
         private System.Windows.Forms.Button btnCheck;
+        private userControl.ucCountNumber ucCountNumber1;
     }
 }
 
