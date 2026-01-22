@@ -164,6 +164,12 @@
     <Compile Include="userControl\ucProductitem.Designer.cs">
       <DependentUpon>ucProductitem.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControl\ucSellingitem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\ucSellingitem.Designer.cs">
+      <DependentUpon>ucSellingitem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="allForm\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControl\ucProductitem.resx">
       <DependentUpon>ucProductitem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\ucSellingitem.resx">
+      <DependentUpon>ucSellingitem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

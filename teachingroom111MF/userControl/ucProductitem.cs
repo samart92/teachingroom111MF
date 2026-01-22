@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using teachingroom111MF.allForm;
 
 namespace teachingroom111MF.userControl
 {
@@ -22,7 +23,13 @@ namespace teachingroom111MF.userControl
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(lblProName.Text +"- $ " + lblPrice.Text);
+            //MessageBox.Show(lblProName.Text +"- $ " + lblPrice.Text);
+
+            ucSellingitem selling = new ucSellingitem(lblProName.Text,lblPrice.Text);
+            frmOrder order= (frmOrder)Application.OpenForms["frmOrder"];
+
+            order.flpSelling.Controls.Add(selling);
+
         }
     }
 }
