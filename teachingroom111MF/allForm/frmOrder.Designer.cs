@@ -32,7 +32,7 @@
             this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPay = new System.Windows.Forms.Button();
             this.flpSelling = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,22 +66,22 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnPay);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 567);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(345, 125);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // btnPay
             // 
-            this.button1.Location = new System.Drawing.Point(61, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(255, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPay.Location = new System.Drawing.Point(61, 78);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(255, 35);
+            this.btnPay.TabIndex = 0;
+            this.btnPay.Text = "Pay";
+            this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // flpSelling
             // 
@@ -117,6 +117,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.FlowLayoutPanel flpSelling;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPay;
     }
 }
